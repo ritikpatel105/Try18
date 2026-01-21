@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Light Up My Life ✨</title>
+</head>
+<body id="bg" style="
+  margin:0;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:#111;
+  color:white;
+  font-family: Arial, sans-serif;
+  transition: background 1s;
+">
+
+  <div style="text-align:center;">
+    <h1>Light Up My Life 💫</h1>
+    <button style="
+      padding:14px 30px;
+      font-size:16px;
+      border:none;
+      border-radius:30px;
+      background: linear-gradient(135deg, #ff4d6d, #ff8fab);
+      color:white;
+      cursor:pointer;
+      box-shadow: 0 0 15px #ff4d6d;
+    " onclick="lightOn()">
+      Turn the Lights On ✨
+    </button>
+  </div>
+
+<script>
+function lightOn() {
+  // Background glow effect
+  document.getElementById("bg").style.background = "linear-gradient(135deg, #ffe6f0, #ffb3c6)";
+  // 1.5 second baad next page
+  setTimeout(() => {
+    location.href = "page4.html";
+  }, 1500);
+}
+</script>
+
+</body>
+</html>
